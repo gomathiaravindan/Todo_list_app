@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./todo.css";
 
 const Todo = ({ todo, handlecomplete, handleedit }) => {
+  const [disable, setdisable] = useState(false);
+
   const handleclick = (e) => {
     e.preventDefault();
+    setdisable(true);
     handlecomplete(e.currentTarget.id);
   };
 
@@ -17,6 +20,7 @@ const Todo = ({ todo, handlecomplete, handleedit }) => {
           key={todo.id + todo.work}
           value={todo.id}
           onChange={handleclick}
+          disabled={disable}
         />{" "}
         <input
           type="text"
@@ -24,6 +28,7 @@ const Todo = ({ todo, handlecomplete, handleedit }) => {
           onChange={(e) => {
             handleedit(e.target.value, todo.id);
           }}
+          disabled={disable}
         />
       </p>
     </div>
