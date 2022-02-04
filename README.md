@@ -1,6 +1,6 @@
 # Todo_app
 
-<img src ="todo.jpg" width="300" height="300" align="center">
+<p align="center"><img src ="todo.jpg" width="300" height="300"></p>
 
 ## My first mini project on react - the todo app. It can perform CRUD operations.
 
