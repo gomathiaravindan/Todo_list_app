@@ -6,10 +6,10 @@
 
 ## The components included are:
  
- *App component
- *Todoform component
- *Todolist component
- *Todo component
+ * App component
+ Todoform component
+ Todolist component
+ Todo component *
  
 ### App Component
 
