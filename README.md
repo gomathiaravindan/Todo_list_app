@@ -1,5 +1,7 @@
 # Todo_app
 
+<img src ="todo.jpg" width="100" height="100">
+
 ## My first mini project on react - the todo app. It can perform CRUD operations.
 
 ## I have create 4 components to make the app more simpler and light weight.
