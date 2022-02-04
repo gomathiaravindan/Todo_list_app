@@ -1,0 +1,73 @@
+.todoform > form > input[type="text"] {
+  border-radius: 20px;
+  height: 30px;
+  width: 70%;
+  font-family: "Quintessential", cursive;
+  font-family: 20px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 5px solid #ed3929;
+  width: 20%;
+  background: transparent;
+}
+
+.todoform > form > input[type="submit"] {
+  background-color: seagreen;
+  margin: 10px;
+  padding: 1px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Quintessential", cursive;
+  border-radius: 5px;
+}
+
+.todoform > form > input[type="submit"]:hover {
+  opacity: 0.8;
+  transition: ease-out 2s;
+}
+
+.todoform > form > input[type="text"]:hover {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid green;
+  opacity: 0.8;
+  border-top: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .todoform > form > input[type="text"] {
+    border-radius: 20px;
+    height: 30px;
+    width: 70%;
+    font-family: "Quintessential", cursive;
+    border: none;
+    border-bottom: 5px solid #ed3929;
+    width: 20%;
+    background: transparent;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .todoform > form > input[type="text"] {
+    border-radius: 20px;
+    height: 30px;
+    width: 70%;
+    font-family: "Quintessential", cursive;
+    border: none;
+    border-bottom: 5px solid #ed3929;
+    width: 20%;
+    background: transparent;
+  }
+}
+@media only screen and (max-width: 100px) {
+  .todoform > form > input[type="text"] {
+    border-radius: 20px;
+    height: 30px;
+    width: 70%;
+    font-family: "Quintessential", cursive;
+    border: none;
+    border-bottom: 5px solid #ed3929;
+    width: 20%;
+    background: transparent;
+  }
+}

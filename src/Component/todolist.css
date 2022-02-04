@@ -1,0 +1,9 @@
+.todolist > button {
+  background-color: #ed3929;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 1px 16px;
+  font-family: "Quintessential", cursive;
+  border-radius: 5px;
+}
