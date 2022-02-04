@@ -17,7 +17,7 @@ const Todolist = ({ todolist, handlecomplete, handlefilter, handleedit }) => {
         );
       })}
       <button type="button" onClick={handlefilter}>
-        Delete Task
+        Delete Completed Task
       </button>
     </div>
   );
