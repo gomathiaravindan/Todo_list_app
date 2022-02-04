@@ -1,4 +1,4 @@
-# Todo_list_app
+# Todo_app
 
 ## My first mini project on react - the todo app. It can perform CRUD operations.
 
