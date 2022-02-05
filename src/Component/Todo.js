@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./todo.css";
 
 const Todo = ({ todo, handlecomplete, handleedit, handleDate }) => {
-  const [disable, setdisable] = useState(false);
-
   const handleclick = (e) => {
     e.preventDefault();
-    setdisable(true);
     handlecomplete(e.currentTarget.id);
   };
 
   return (
     <div className="todo-container">
-      <p style={{ opacity: todo.isdone ? "0.5" : "" }}>
+      <p
+        style={{
+          opacity: todo.isdone ? "0.5" : "",
+          textDecoration: todo.isdone ? "line-through" : ""
+        }}
+      >
         <input
           type="radio"
           className="todo"
@@ -28,7 +30,6 @@ const Todo = ({ todo, handlecomplete, handleedit, handleDate }) => {
           onChange={(e) => {
             handleedit(e.target.value, todo.id);
           }}
-          disabled={disable}
         />
         <input
           type="date"
