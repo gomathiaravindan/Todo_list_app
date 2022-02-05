@@ -2,7 +2,13 @@ import React from "react";
 import Todo from "./Todo";
 import "./todolist.css";
 
-const Todolist = ({ todolist, handlecomplete, handlefilter, handleedit }) => {
+const Todolist = ({
+  todolist,
+  handlecomplete,
+  handlefilter,
+  handleedit,
+  handleDate
+}) => {
   return (
     <div className="todolist">
       {todolist.map((todo, index) => {
@@ -13,6 +19,7 @@ const Todolist = ({ todolist, handlecomplete, handlefilter, handleedit }) => {
             handlecomplete={handlecomplete}
             handlefilter={handlefilter}
             handleedit={handleedit}
+            handleDate={handleDate}
           />
         );
       })}

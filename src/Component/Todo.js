@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./todo.css";
 
-const Todo = ({ todo, handlecomplete, handleedit }) => {
+const Todo = ({ todo, handlecomplete, handleedit, handleDate }) => {
   const [disable, setdisable] = useState(false);
 
   const handleclick = (e) => {
@@ -20,15 +20,23 @@ const Todo = ({ todo, handlecomplete, handleedit }) => {
           key={todo.id + todo.work}
           value={todo.id}
           onChange={handleclick}
-          disabled={disable}
         />{" "}
         <input
           type="text"
+          id={todo.id}
           value={todo.work}
           onChange={(e) => {
             handleedit(e.target.value, todo.id);
           }}
           disabled={disable}
+        />
+        <input
+          type="date"
+          id={todo.id}
+          value={todo.date}
+          onChange={(e) => {
+            handleDate(e.target.value, todo.id);
+          }}
         />
       </p>
     </div>
